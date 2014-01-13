@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Debug=savitchchp1prob2
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/savitchchp1prob2
+CND_ARTIFACT_NAME_Debug=savitchchp1prob3
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/savitchchp1prob3
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Debug=savitchchp1prob2.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/savitchchp1prob2.tar
+CND_PACKAGE_NAME_Debug=savitchchp1prob3.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/savitchchp1prob3.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=savitchchp1prob2
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/savitchchp1prob2
+CND_ARTIFACT_NAME_Release=savitchchp1prob3
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/savitchchp1prob3
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=savitchchp1prob2.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/savitchchp1prob2.tar
+CND_PACKAGE_NAME_Release=savitchchp1prob3.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/savitchchp1prob3.tar
 #
 # include compiler specific variables
 #

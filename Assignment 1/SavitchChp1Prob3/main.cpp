@@ -30,7 +30,8 @@ int main() {
     cin>>PEASPPD;
     
     //formula for calculating
-    TTLPEAS=NPODS*PEASPPD;
+    //changed * to / according to question 3
+    TTLPEAS=NPODS/PEASPPD;
     cout<<"If you have ";
     cout<< NPODS;
     cout<< " pea pods\n";
