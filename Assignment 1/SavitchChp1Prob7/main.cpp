@@ -30,7 +30,7 @@ int main() {
     cout<<"**************************************"<<endl;
     cout<<endl;
     cout<<"Computer Science is Cool Stuff!!!"<<endl;
-    
+    //exit stage right
     return 0;
 }
 

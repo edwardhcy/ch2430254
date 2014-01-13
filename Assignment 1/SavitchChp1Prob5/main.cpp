@@ -28,7 +28,7 @@ int main() {
     //result
     cout <<"The sum of your 1st and 2nd integer is "<<SUM<<endl;
     cout <<"The product of your 1st and 2nd integer is "<<PDT<<endl;
-    
+    //exit stage right
     return 0;
 }
 

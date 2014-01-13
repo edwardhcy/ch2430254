@@ -20,6 +20,7 @@ int main(int argc, char** argv) {
     //NCKL= Nickel
     //TOTAL= Total cents
     int QTR,DIME,NCKL,TOTAL;
+    
     //prompt for number of quarter
     cout<<"Please enter your quarter.\n";
     cin>> QTR;
@@ -37,7 +38,7 @@ int main(int argc, char** argv) {
     
     //display the result
     cout<<"You have "<<TOTAL<<" cent(s).\n";
-    
+    //exit stage right
     return 0;
 }
 
