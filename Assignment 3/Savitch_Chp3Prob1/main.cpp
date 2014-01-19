@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Chanyap Ho
- *
  * Created on January 19, 2014, 7:07 AM
+ * Savitch Chapter 3 Problem 1
  */
 
 #include <iostream>
