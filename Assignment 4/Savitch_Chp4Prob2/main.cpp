@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Chanyap Ho
- * Created on January 24, 2014, 3:49 PM
+ * Created on January 24, 2014, 5:45 PM
  */
 
 #include <cstdlib>
@@ -21,9 +21,16 @@ int main(int argc, char** argv) {
     char ans;
     do{
     //Prompt for input
-    cout<<"How many liters of gasoline does your car used in this trip?"<<endl;
+    cout<<"How many liters of gasoline does car 1 used in this trip?"<<endl;
     cin>>liters;
-    cout<<"How many miles did you travel?"<<endl;
+    cout<<"How many miles did did you travel in car 1?"<<endl;
+    cin>>miles;
+    result = gasUsed(miles, liters);
+    cout<<"Your car's mpg is "<<result<<endl;
+    
+    cout<<"How many liters of gasoline does car 2 used in this trip?"<<endl;
+    cin>>liters;
+    cout<<"How many miles did you travel in car 2?"<<endl;
     cin>>miles;
     result = gasUsed(miles, liters);
     cout<<"Your car's mpg is "<<result<<endl;
