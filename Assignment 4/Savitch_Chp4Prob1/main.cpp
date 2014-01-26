@@ -2,8 +2,10 @@
  * File:   main.cpp
  * Author: Chanyap Ho
  * Created on January 24, 2014, 3:49 PM
+ * Savitch Chapter 4 Problem 1
  */
 
+//System Libraries
 #include <cstdlib>
 #include <iostream>
 using namespace std;
