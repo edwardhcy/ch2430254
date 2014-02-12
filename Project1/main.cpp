@@ -161,6 +161,7 @@ int main(int argc, char** argv) {
     cout<<"Player 2 has won "<<owin<<" times."<<endl;
     
             }while(gameover == false);//loop the game until game is over
+            cin.get();
         //Exit stage right
         return 0;
 }
