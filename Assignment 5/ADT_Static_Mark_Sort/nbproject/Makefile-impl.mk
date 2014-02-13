@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ADT_Mark_Sort
+PROJECTNAME=ADT_Static_Mark_Sort
 
 # Active Configuration
 DEFAULTCONF=Debug

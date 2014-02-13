@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Edward
+ * Author: Chanyap Ho
  *
  * Created on February 11, 2014, 12:39 AM
  */
@@ -24,46 +24,45 @@ struct StatAry{
 void filAray(StatAry &,int);
 void prntAry(const StatAry &,int);
 void swap(int &,int &);
-void swap(StatAry &,int,int);
-void minPos(StatAry &,int,int);
-void mrkSort(StatAry &,int);
-void xcopy(const StatAry,StatAry,int);
+void minPos(StatAry &,int);
+void mrkSort(StatAry &);
+void xcopy(const StatAry &,StatAry &);
 
 //Executions Begin Here!
 int main(int argc, char** argv) {
     //Declare variables and initialize the
     //random number generator
     const int SIZE=200;
-    int array[SIZE],brray[SIZE];
     srand(static_cast<unsigned int>(time(0)));
     StatAry sAry, sBry;
     //Fill the structure
     filAray(sAry,SIZE);
-    //xcopy(sAry,sBry,SIZE);
-    //Print the array
-    //prntAry(sAry,SIZE);
-    //Test out the min pos routine
-    mrkSort(sAry,SIZE);
+    xcopy(sAry,sBry);
     //Print the array
     prntAry(sAry,SIZE);
+    //Test out the min pos routine
+    mrkSort(sBry);
+    //Print the array
+    prntAry(sBry,SIZE);
     //Exit Stage Right!!!
     return 0;
 }
 
-void xcopy(const StatAry &a,StatAry &b,int n){
-    for(int i=0;i<n;i++){
+void xcopy(const StatAry &a,StatAry &b){
+    b.utlSize=a.utlSize;
+    for(int i=0;i<a.utlSize;i++){
         b.data[i]=a.data[i];
     }
 }
 
-void mrkSort(StatAry &a,int n){
-    for(int i=0;i<n-1;i++){
-        minPos(a,n,i);
+void mrkSort(StatAry &a){
+    for(int i=0;i<a.utlSize-1;i++){
+        minPos(a,i);
     }
 }
 
-void minPos(StatAry &a,int n,int pos){
-    for(int i=pos+1;i<n;i++){
+void minPos(StatAry &a,int pos){
+    for(int i=pos+1;i<a.utlSize;i++){
         if(a.data[pos]>a.data[i])swap(a.data[pos],a.data[i]);
         //if(a[pos]>a[i])swap(a,pos,i);
     }
@@ -73,12 +72,6 @@ void swap(int &a,int &b){
     int temp=a;
     a=b;
     b=temp;
-}
-
-void swap(StatAry &a,int i,int j){
-    int temp=a.data[i];
-    a.data[i]=a.data[j];
-    a.data[j]=temp;
 }
 
 void prntAry(const StatAry &a,int perLine){

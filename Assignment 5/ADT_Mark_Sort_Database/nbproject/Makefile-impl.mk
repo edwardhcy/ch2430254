@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ADT_Dynamic_Mark_Sort_Database
+PROJECTNAME=ADT_Mark_Sort_Database
 
 # Active Configuration
 DEFAULTCONF=Debug
