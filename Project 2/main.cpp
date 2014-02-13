@@ -3,7 +3,9 @@
  * Author: Chanyap Ho
  * Created on February 2, 2014, 9:46 PM
  * Purpose: Create a game project using C++
- * Game Type: Tic Tac Toe
+ * Game Type: Tic Tac Toe V2
+ * Added feature: Read from and Save to files, 2d arrays, function prototypes,
+ *                pass by references.
  */
 
 //System Libraries
@@ -11,7 +13,6 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-
 using namespace std;
 
 //Global Constants
@@ -26,6 +27,7 @@ void write1(int);
 void write2(int);
 void dispBrd(char[][COLS],int);
 char turnChk(int,char,int);
+
 //Execution begins here
 int main(int argc, char** argv) {
     //Declare Variables
@@ -54,11 +56,10 @@ int main(int argc, char** argv) {
         owin = read2();
         //announce the winning since the game was created
         announce(xwin,owin);
-        //initialize the game
+        //initialize the game 
         char board[3][3] = {{'7','8','9'},
                             {'4','5','6'},
                             {'1','2','3'}};
-        
         
         do{
             
@@ -154,6 +155,7 @@ int main(int argc, char** argv) {
                      write2(owin);
                  }
                  gameover = true;  //game is over
+                 
         }else if(gameover == true && gamewin == false){//game over and no one wins
                  cout<<endl;
                  cout<<g<<" | "<<h<<" | "<<i<<endl; //display the  board
@@ -166,16 +168,15 @@ int main(int argc, char** argv) {
                  cout<<"Nobody wins! It's a draw!"<<endl;//show result as draw if game is over and no one won
         }
   
-    
             }while(gameover == false);//loop the game until game is over
             //keep track of winnings
             
-            xwin = read1();
-            owin = read2();
+            xwin = read1();//read from xwin.dat
+            owin = read2();//read from owin.dat
             announce(xwin,owin);
             
-            cout<<"Do you want to repeat?"<<endl;
-            cin>>ans;
+            cout<<"Do you want to repeat?"<<endl;//ask for repeat
+            cin>>ans;//get answer
     }while(ans == 'Y'||ans == 'y');
     
     //Exit stage right
@@ -189,7 +190,7 @@ void dispBrd(char array[][COLS],int size){
         cout<<endl;
         for (int y=0;y<size;y++)
         {
-            cout<<setw(2)<<array[x][y]<<setw(2);
+            cout<<setw(2)<<array[x][y]<<setw(2);//draw the grid
             cout<<setw(2);
         }
         cout<<endl;
@@ -222,7 +223,7 @@ char turnChk(int turn,char sign,int player){
         cout<<"You are "<<sign<<endl;//reminding the player about their sign
         
     }
-        return sign;  
+        return sign;  //return sign to be used to determine move's validity
 }
 
 int read1(){
