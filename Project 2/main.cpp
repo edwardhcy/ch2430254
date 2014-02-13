@@ -26,7 +26,7 @@ void announce(unsigned short &,unsigned short &);
 void write1(int);
 void write2(int);
 void dispBrd(char[][COLS],int);
-char turnChk(int,char,int);
+char turnChk(int,char ,unsigned short &);
 
 //Execution begins here
 int main(int argc, char** argv) {
@@ -68,6 +68,7 @@ int main(int argc, char** argv) {
             turn++;//increment the turn to start the game
             
             sign = turnChk(turn,sign,player);
+            
             if (sign == 'X'){
                 player=1;
             }else player=2;
@@ -198,7 +199,7 @@ void dispBrd(char array[][COLS],int size){
     cout<<endl;
 }
 
-char turnChk(int turn,char sign,int player){
+char turnChk(int turn,char sign,unsigned short &player ){
     
         if(turn%2 == 0) {//if the turn is multiples of 2,then it'll be player 1's turn.
         sign = 'X';
